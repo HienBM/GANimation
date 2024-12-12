@@ -91,7 +91,7 @@ class AusDataset(DatasetBase):
         self._transform = transforms.Compose(transform_list)
 
     def _read_ids(self, file_path):
-        ids = np.loadtxt(file_path, delimiter='\t', dtype=np.str)
+        ids = np.loadtxt(file_path, delimiter='\t', dtype=str)
         return [id[:-4] for id in ids]
 
     def _read_conds(self, file_path):
