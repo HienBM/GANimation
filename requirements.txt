@@ -1,6 +1,8 @@
 numpy
 matplotlib
 tqdm
-dlib
 face_recognition
 opencv-contrib-python
+pickleshare
+dlib==19.24.2
+tensorboardX
